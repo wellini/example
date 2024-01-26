@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #002333;
+    font-family: 'Playfair Display', serif;
+}
+
+menu, img {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:focus, a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #002333;
+    color: #FFF;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main {
+    background-color: #FFF;
+    padding-bottom: 50px;
+}
+
+.footer {
+    background-color: #002333;
+    color: #FFF;
+    padding: 15px 0;
+}
+
+.header, .main, .footer {
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    text-align: left;
+    width: 1000px;
+    position: relative;
+}
+
+.header .content {
+    width: calc(100% - 20px);
+}
+
+.header .content {
+    text-align: center;
+}
+
+.locale-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    bottom: auto;
+    margin: 15px 0;
+}
+
+.menu {
+    margin: 15px 0;
+}
+
+.menu-element {
+    margin: 0 15px;
+}
+
+.locale-menu-element {
+    margin: 0 5px;
+}
+
+.footer .contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .contacts ul li {
+    margin-bottom: 5px;
+}
+
+.block-descriptor .descriptor {
+    width: calc(100% - 350px);
+    display: inline-block;
+}
+
+.block-descriptor .latest-journal {
+    width: 350px;
+    display: inline-block;
+}
+
+.issue {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.issue-preview {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.issue-preview img {
+    height: 100%;
+    position: absolute;
+    left: -300px;
+    right: -300px;
+    margin: 0 auto;
+}
+
+.issue-preview-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 35, 51, .5);
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+.issue-preview-overlay .overlay-text {
+    color: #fff;
+    font-size: 1.2em;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    margin: auto 0;
+    height: 1.44em;
+    font-weight: bold;
+}
+
+.issue-preview:hover .issue-preview-overlay {
+    opacity: 1;
+}
